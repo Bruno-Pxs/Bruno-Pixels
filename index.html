@@ -342,6 +342,7 @@
     .section-subtitle{ font-size:18px; color:var(--muted); max-width:60ch; margin:0 auto; }
 
     /* Capabilities */
+    @media (max-width: 768px) { .services-split { grid-template-columns: 1fr; } }
     #capabilities { margin-top: 40px; }
     .services-split{ display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px; }
     .service-pillar{ background: white; border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-sm); border: 1px solid rgba(15,23,42,0.04); transition: all var(--transition); }
@@ -355,6 +356,7 @@
     .service-list li { margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--muted); }
     .service-list li i { color: var(--text); margin-top: 4px; }
 
+    @media (max-width: 768px) { .detailed-services { grid-template-columns: 1fr; } }
     .detailed-services{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
     .service-card{ background:white; padding:28px; border-radius:var(--radius-lg); border:1px solid rgba(15,23,42,0.04); box-shadow:var(--shadow-sm); transition:all var(--transition); cursor:pointer; }
     .service-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:var(--accent-light); }
