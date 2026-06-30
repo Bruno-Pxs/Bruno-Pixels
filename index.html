@@ -479,8 +479,8 @@
     }
 
     @media (max-width: 768px) {
-      /* UNFIX NAVBAR ON MOBILE SO IT DOESN'T COVER SCREEN */
-      .site-header { position: relative; top: 0; margin-top: 8px; }
+      /* KEEP NAVBAR FIXED BUT COMPACT */
+      .site-header { position: sticky; top: 12px; margin-top: 12px; z-index: 100; }
 
       /* WIDEN CONTAINER TO REDUCE SIDE MARGINS */
       .container { width: 100%; padding: 0 12px; margin-top: 20px; }
@@ -500,6 +500,8 @@
       .nav-links { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: 6px; padding-bottom: 2px; margin-top: 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
       .nav-links::-webkit-scrollbar { display: none; }
       .btn { padding: 6px 12px; font-size: 12px; white-space: nowrap; margin-top: 0; }
+
+      .kicker {margin-top: 50px;}
 
       /* Hero Title Jump Prevention */
       .hero-title { font-size: 32px; min-height: 80px; margin-top: 20px; }
